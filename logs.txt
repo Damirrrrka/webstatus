@@ -1,0 +1,8 @@
+2:05:12 Restart AVERS & FireBird
+2:09:06 Restart AVERS & FireBird
+2:09:54 Restart AVERS & FireBird
+2:09:54 Restart AVERS & FireBird
+debug: 
+2:10:35 Restart AVERS & FireBird
+debug: Не удается отобразить веб-страницу
+2:10:36 Restart AVERS & FireBird

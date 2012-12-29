@@ -1,3 +1,3 @@
 [main]
 script=c:\logonscripts\avers-restart.bat
-ip=dnevnik.gimnazia2nv.ru:8080
+ip=http://dnevnik.gimnazia2nv.ru:8080
