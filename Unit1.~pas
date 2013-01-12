@@ -45,7 +45,7 @@ _URL: string;// = 'http://192.168.10.2:8082';
 _LASTCAPTION: string;
 procedure doAversRestart();
 begin
-Form1.Memo1.Lines.Add(FormatDateTime('dd.mm.yyyy', now)+' Restart AVERS & FireBird');
+Form1.Memo1.Lines.Add(TimeToStr(now)+' Restart AVERS & FireBird');
 form1.Memo1.Lines.SaveToFile(ExtractFilePath(Application.ExeName)+'logs.txt');
 WinExec(PChar(Form1.Edit1.Text), SW_SHOW);
 end;
@@ -69,7 +69,7 @@ ini: tinifile;
 begin
 ini:=tinifile.Create(ExtractFilePath(Application.ExeName)+'config.txt');
 _URL:=ini.ReadString('main', 'ip', 'http://dnevnik.gimnazia2nv.ru:8080');
-edit1.Text:=ini.ReadString('main', 'script', 'c:\logonscripts\portfwd.bat');
+edit1.Text:=ini.ReadString('main', 'script', 'c:\logonscripts\avers-restart.bat');
 if FileExists(ExtractFilePath(Application.ExeName)+'logs.txt') then
 memo1.Lines.LoadFromFile(ExtractFilePath(Application.ExeName)+'logs.txt');
 //wb1.Hide;
